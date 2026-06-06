@@ -4,11 +4,11 @@ let score3 = null;
 let score4 = undefined;
 let score5 = "dinesh";
 
-// console.log(typeof score1);  // -> string
-// console.log(typeof score2);  // -> string
-// console.log(typeof score3);  // -> object
-// console.log(typeof score4);  // -> undefined
-// console.log(typeof score5);  // -> string
+console.log(typeof score1);  // -> string
+console.log(typeof score2);  // -> string
+console.log(typeof score3);  // -> object
+console.log(typeof score4);  // -> undefined
+console.log(typeof score5);  // -> string
 
 
 // conversion me hamesha data types ko capital se start karte h
@@ -56,3 +56,26 @@ let someNumber = 33;
 let stringNumber = String(someNumber);
 console.log(stringNumber);  // -> 33
 console.log(typeof stringNumber); // -> string
+
+
+
+// ******************* Operations  ************* 
+let val = 3;
+let negValue = -val;
+console.log(negValue);
+
+// +,-,*,%,/
+console.log(2**3); // 2 to the power 3
+
+let str1 = "Hello";
+let str2 = " Dinesh";
+let str3 = str1+str2;
+console.log(str3);
+
+// number + number  => addition
+// anything + string => string concatenation
+console.log("1" + 2);  // 12 
+console.log(1 + "2");  // 12
+console.log("1" + 2 + 2);  // 122
+console.log(1 + 2 + "2"); // 32
+
