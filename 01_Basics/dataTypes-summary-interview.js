@@ -42,3 +42,31 @@ console.log(typeof myFunction); //functionobject - function
 console.log(typeof names); // object
 
 // read -> https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// ++++++++++++++++++++++++ Memory +++++++++++++++++
+
+// stack -> use in primitive
+// heap -> use in non-primitive
+
+// stack 
+let name = "dinesh";
+let anotherNmae = name;  // name ki copy milli h anotherName ko
+console.log(anotherNmae); 
+
+anotherNmae = "ramesh"; //change value in copy
+console.log(name);
+console.log(anotherNmae);
+
+// heap
+let userOne = {
+    email : "dinesh@gmail.com",
+    upi : "user@ybl",
+}
+
+let userTwo = userOne; //object ki memory ka reference milla h
+
+userTwo.email = "abc@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
